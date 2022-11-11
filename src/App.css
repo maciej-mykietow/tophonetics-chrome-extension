@@ -1,16 +1,7 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 400px;
+  height: 300px;
 }
 
 .App-header {
@@ -24,15 +15,57 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.command-action-keys-select {
+  margin: 0rem !important;
+  width: 25vw !important;
+  padding: 0.25rem !important;
+  height: 7vh;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.settings-edit-section {
+  float: right
+}
+
+.command-action-icon-settings-edit {
+  cursor: pointer;
+  margin-left: 0.4rem !important;
+}
+
+.command-row-container {
+  overflow: auto;
+  height: 10vh;
+}
+
+.user-commands-rows-container {
+  margin-top: 2.0rem;
+  width: 70vw;
+}
+
+.weak-forms-label{
+  margin-top: 1rem;
+}
+
+.command-action-keys-section {
+  float:right;
+  font-size: 17px;
+}
+
+.command-action-name-section {
+  font-size: 17px;
+  float:left;
+}
+
+.keyboard-key {
+  border: 1px solid #aaa;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.1em 0.2em rgb(0 0 0 / 10%);
+  background-color: #f9f9f9;
+  background-image: linear-gradient(to bottom,#eee,#f9f9f9,#eee);
+  color: #000;
+  padding: 0.1em 0.3em;
+  margin-left: 0.5em;
+  font-family: inherit;
+  font-size: 0.85em;
+  white-space: nowrap;
 }

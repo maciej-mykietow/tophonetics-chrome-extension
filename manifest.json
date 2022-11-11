@@ -1,0 +1,43 @@
+{
+    "short_name": "Tophonetics extension",
+    "name": "Tophonetics extension",
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "src/App.tsx",
+          "webcomponents-bundle.js"
+        ]
+      }
+    ],
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+      "storage",
+      "tabs",
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+        "default_popup": "build/index.html"
+    },
+    "icons": {
+      "16": "/src/schwa.png",
+      "32": "/src/schwa.png",
+      "48": "/src/schwa.png"
+    },
+    "background": {
+      "service_worker": "transcriptionWorker.js"
+    },
+    "commands": {
+      "transcript": {
+        "description": "Transcript selection",
+        "suggested_key": "Ctrl+Shift+L"
+      }
+    },
+    "content_security_policy": {
+      "extension_page": "script-src 'self' 'sha256-fdAfMKZtCTRPKMRznGwonJHC++vCCrQS7XFnVrzSXAE=' 'sha256-YD8w9VLrdvqI5/tFVmpT+1337ly+e/JvPrkRxYZo/w4='; object-src 'self'"
+    }
+  }
