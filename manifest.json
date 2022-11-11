@@ -34,7 +34,7 @@
     "commands": {
       "transcript": {
         "description": "Transcript selection",
-        "suggested_key": "Ctrl+Shift+L"
+        "suggested_key": "Alt+1"
       }
     },
     "content_security_policy": {
